@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: W4S2
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: gestion_academica_universidad
+      MYSQL_USER: postgres
+      MYSQL_PASSWORD: posgrest123
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
