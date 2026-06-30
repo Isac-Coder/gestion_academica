@@ -14,12 +14,13 @@ docker compose up -d
 ## Importar la base de datos
 
 ```bash
-docker exec -i W4S2 posgrest123 -u postgres -p gestion_academica_universidad < gestion_academica.sql
+docker exec -i [nombre_de_tu_contenedor] mysql -u root -p[tu_contraseña] gestion_academica_universidad < respaldo.sql
 ```
 
 ## Credenciales
 
 - Base de datos: gestion_academica_universidad
+- Usuario root: root
 - Usuario: postgres
 - Contraseña: posgrest123
-- contraseña root: postgres123
+- contraseña root: root123
